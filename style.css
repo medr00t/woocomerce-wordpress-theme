@@ -548,6 +548,12 @@ hr {
 /* TEST PAGE  */
 
 
+.numbers{
+    display: flex;
+    width: 1000px !important;
+    inline-size: none;
+}
+
 
 
 

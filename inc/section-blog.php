@@ -1,0 +1,1 @@
+this is the section-blog.php page 

@@ -133,7 +133,7 @@ function get_part_template_contact()
     return ob_get_clean();
 }
 
-add_action('after_switch_theme', 'create_theme_pages');
+// add_action('after_switch_theme', 'create_theme_pages');
 
 require_once get_template_directory() . '/inc/class-bootstrap-navwalker.php';
 require_once get_template_directory() . '/inc/customizer.php';

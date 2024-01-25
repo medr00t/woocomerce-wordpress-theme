@@ -74,10 +74,4 @@ $section_1_3_image_id = attachment_url_to_postid($section_1_3_image_url);
     </button>
 </div>
 
-
-
-
-
-
-
 <?php get_footer() ?>

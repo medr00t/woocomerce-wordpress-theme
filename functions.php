@@ -21,7 +21,7 @@ function register_my_menus()
 {
     register_nav_menus(
         array(
-            'primary-menu' => __('Primary Menu'),
+            'header-menu' => __('Header Menu'),
         )
     );
 }
@@ -157,14 +157,14 @@ function create_theme_menu()
         // Create the menu
         $menu_id = wp_create_nav_menu($menu_name);
 
-        // Set the created menu as the primary menu
+        // Set the created menu as the header menu
         $locations = get_theme_mod('nav_menu_locations');
-        $locations['primary-menu'] = $menu_id;
+        $locations['header-menu'] = $menu_id;
         set_theme_mod('nav_menu_locations', $locations);
 
         // Display the menu with the custom walker
         wp_nav_menu(array(
-            'theme_location' => 'primary-menu',
+            'theme_location' => 'header-menu',
             'walker' => new bootstrap_5_wp_nav_menu_walker(),
             'depth' => 1,  // Set depth to 1 to remove submenus
         ));

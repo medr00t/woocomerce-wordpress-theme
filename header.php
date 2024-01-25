@@ -25,7 +25,7 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <?php
                             wp_nav_menu(array(
-                                'theme_location' => 'primary-menu',
+                                'theme_location' => 'header-menu',
                                 'menu_class' => 'navbar-nav mx-auto nav-list',
                                 'container' => false,
                                 'walker' => new bootstrap_5_wp_nav_menu_walker(),
@@ -51,7 +51,7 @@
                     <!-- Include your mobile navigation content here -->
                     <?php
                     wp_nav_menu(array(
-                        'theme_location' => 'primary-menu',
+                        'theme_location' => 'header-menu',
                         'menu_class' => 'navbar-nav mx-auto nav-list',
                         'container' => false,
                         'walker' => new bootstrap_5_wp_nav_menu_walker(),
